@@ -31,6 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.14"
+    }
 }
 
 dependencies {
@@ -57,7 +63,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.word-view"
                 artifactId = "Components"
-                version = "1.0.0"
+                version = "1.0.1"
                 from(components["release"])
             }
         }
