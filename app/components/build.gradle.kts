@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
     id("maven-publish")
 }
 
@@ -63,7 +64,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.word-view"
                 artifactId = "Components"
-                version = "1.0.1"
+                version = "1.0.2"
                 from(components["release"])
             }
         }
