@@ -18,6 +18,14 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.ContentScale
 import coil3.compose.AsyncImage
 
+/**
+ * A composable function that displays an image with a fade-in animation effect.
+ *
+ * The [FadeInAsyncImage] composable renders a [Bitmap] image using [AsyncImage] with a fade-in animation
+ * when the image is displayed.
+ *
+ * @param image The [Bitmap] image to be displayed. Can be null, in which case no image is shown.
+ */
 @Composable
 fun FadeInAsyncImage(image: Bitmap?) {
     var isVisible by rememberSaveable { mutableStateOf(false) }

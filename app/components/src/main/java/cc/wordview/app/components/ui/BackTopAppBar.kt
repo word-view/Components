@@ -13,6 +13,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 
+/**
+ * A composable function that displays a top app bar with a back navigation icon.
+ *
+ * The [BackTopAppBar] composable creates a Material 3 [TopAppBar] with a customizable title and a back
+ * button. The back button, represented by an [Icon] with an arrow, triggers the [onClickBack] callback
+ * when clicked. The app bar's colors are set to match the background and content colors of the current
+ * theme.
+ *
+ * @param title A composable function that defines the content to be displayed as the app bar's title.
+ * @param onClickBack The callback invoked when the back button is clicked.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BackTopAppBar(title: @Composable () -> Unit, onClickBack: () -> Unit) {

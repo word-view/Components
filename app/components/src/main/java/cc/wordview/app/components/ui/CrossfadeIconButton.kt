@@ -15,6 +15,19 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+/**
+ * A composable function that displays a circular button with a crossfade-animated icon.
+ *
+ * The [CrossfadeIconButton] composable creates a Material 3 [Button] with a circular shape, containing an
+ * [Icon] that animates changes using [Crossfade].
+ *
+ * @param modifier The [Modifier] to be applied to the button for layout customization. Defaults to an empty [Modifier].
+ * @param colors The [ButtonColors] to style the button's container and content. Defaults to a transparent container with primary content color.
+ * @param onClick The callback invoked when the button is clicked.
+ * @param enabled Whether the button is clickable. Defaults to true.
+ * @param icon The [ImageVector] representing the icon to display inside the button.
+ * @param size The [Dp] size of the button, applied to both width and height.
+ */
 @Composable
 fun CrossfadeIconButton(
     modifier: Modifier = Modifier,

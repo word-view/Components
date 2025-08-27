@@ -11,7 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 /**
- * Button component that wraps a text
+ * A composable function that displays a button with customizable text content.
+ *
+ * @param text A composable function that defines the content to be displayed inside the button.
+ * @param onClick The callback invoked when the button is clicked.
+ * @param modifier The [Modifier] to be applied to the button for layout customization. Defaults to an empty [Modifier].
+ * @param enabled Whether the button is clickable. Defaults to true.
  */
 @Composable
 fun WordButton(text: @Composable () -> Unit, onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true) {

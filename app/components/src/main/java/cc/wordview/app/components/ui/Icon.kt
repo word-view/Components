@@ -7,7 +7,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
 
 /**
- * Simplification of `androidx.compose.material3.Icon` to automatically
+ * Simplification of [androidx.compose.material3.Icon] to automatically
  * set `contentDescription` to `null`
  *
  * @param imageVector ImageVector to draw inside this icon

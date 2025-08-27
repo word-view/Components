@@ -7,7 +7,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.Dp
 
 /**
- * Simplified version of the `Spacer` composable.
+ * Simplified version of the [androidx.compose.foundation.layout.Spacer] composable.
  *
  * @param size The size of the space
  */
