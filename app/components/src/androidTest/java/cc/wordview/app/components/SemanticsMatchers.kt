@@ -1,4 +1,4 @@
-package cc.wordview.app.components.ui
+package cc.wordview.app.components
 
 import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.SemanticsMatcher
