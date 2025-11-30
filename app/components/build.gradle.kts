@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.2.21"
     id("maven-publish")
 }
 
@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.androidx.media3.ui)
     implementation(libs.timber)
     implementation(libs.androidx.media)
+    implementation(libs.androidx.compose.material.icons.extended)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ui.test.junit4)
     androidTestImplementation(libs.mockito.android)
@@ -78,7 +79,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.word-view"
                 artifactId = "Components"
-                version = "1.2.0"
+                version = "1.2.1"
                 from(components["release"])
             }
         }
