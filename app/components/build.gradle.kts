@@ -79,7 +79,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.word-view"
                 artifactId = "Components"
-                version = "1.2.1"
+                version = "1.2.2"
                 from(components["release"])
             }
         }
