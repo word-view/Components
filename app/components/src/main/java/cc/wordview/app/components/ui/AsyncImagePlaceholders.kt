@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Immutable
 
 @Immutable
-class SongCardPlaceholders(
+class AsyncImagePlaceholders(
     @DrawableRes val noConnectionWhite: Int,
     @DrawableRes val noConnectionDark: Int,
 )
