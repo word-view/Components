@@ -118,10 +118,20 @@ class AudioPlayer {
 
     fun skipForward() {
         player.seekForward()
+
+        val position = player.currentPosition.toInt()
+        val bufferedPercentage = player.bufferedPercentage
+
+        onPositionChange(position, bufferedPercentage)
     }
 
     fun skipBack() {
         player.seekBack()
+
+        val position = player.currentPosition.toInt()
+        val bufferedPercentage = player.bufferedPercentage
+
+        onPositionChange(position, bufferedPercentage)
     }
 
     fun getDuration(): Long {
