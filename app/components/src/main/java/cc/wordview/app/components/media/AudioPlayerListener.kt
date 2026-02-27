@@ -33,13 +33,23 @@ class AudioPlayerListener : Player.Listener {
     }
 
     override fun onPlaybackStateChanged(playbackState: Int) {
-        Timber.v("playbackState=$playbackState")
+        Timber.v("playbackState=${getPlaybackStateName(playbackState)}")
 
         when (playbackState) {
             Player.STATE_BUFFERING -> onBuffering()
             Player.STATE_ENDED -> onPlaybackEnd()
             Player.STATE_IDLE -> {}
             Player.STATE_READY -> onReady()
+        }
+    }
+
+    private fun getPlaybackStateName(state: Int): String {
+        return when (state) {
+            Player.STATE_BUFFERING -> "Buffering"
+            Player.STATE_ENDED -> "Ended"
+            Player.STATE_IDLE -> "Idle"
+            Player.STATE_READY -> "Ready"
+            else -> "Unexpected State ($state)"
         }
     }
 }
