@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.timber)
     implementation(libs.androidx.media)
     implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.compose.shimmer)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ui.test.junit4)
     androidTestImplementation(libs.mockito.android)

@@ -21,6 +21,7 @@ navigationCompose = "2.9.7"
 media3Extractor = "1.9.2"
 timber = "5.0.1"
 media = "1.7.1"
+shimmer = "1.0.0"
 
 [libraries]
 androidx-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
@@ -53,6 +54,7 @@ androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", versi
 androidx-media3-exoplayer-dash = { module = "androidx.media3:media3-exoplayer-dash", version.ref = "media3Extractor" }
 androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3Extractor" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+compose-shimmer = { module = "me.vponomarenko:compose-shimmer", version.ref = "shimmer" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
